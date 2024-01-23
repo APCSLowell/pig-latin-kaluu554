@@ -6,8 +6,8 @@ public class Main {
 		PigLatin sim = new PigLatin();
         	//sim.tester();
 		String[] lines = loadStrings("words.txt");
-  System.out.println("there are " + lines.length + " lines");
-  for (int i = 0 ; i < lines.length; i++) 
+  System.out.println("there are " + lines.length() + " lines");
+  for (int i = 0 ; i < lines.length(); i++) 
   {
     System.out.println(pigLatin(lines[i]));
   }
