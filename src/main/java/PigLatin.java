@@ -49,6 +49,19 @@ public class PigLatin {
 	    if(findFirstVowel(sWord) == -1) {
 		    return sWord + "ay";
 	    }
+	else if(sWord.substring(0,1).equals("a")||
+  	sWord.substring(0,1).equals("i")||
+  	sWord.substring(0,1).equals("u")||
+  	sWord.substring(0,1).equals("e")||
+  	sWord.substring(0,1).equals("o")){
+   	return sWord + "way"; 
+  }
+  else if(sWord.substring(0,2).equals("qu")){
+   return sWord.substring(2) + "qu"; 
+  }
+  else if(findFirstVowel(sWord.substring(0,1)) == -1){
+    return sWord.substring(1) + sWord.substring(0,1) + "ay";
+  }    
 	    else {
 		return "ERROR!";
 	    }
